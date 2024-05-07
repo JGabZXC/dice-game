@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root  {
+    --fc-1: #A91D3A;
+    --fc-2: #A3FFD6;
+    --fc-3: #FFD23F;
+    --fc-4: #A3FFD6;
+
+    --bg-c: #1C1678;
+    
+    --ff-base: "Montserrat", sans-serif;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    font-family: var(--ff-base);
+    background: var(--bg-c);
+    padding-inline: 20px;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > * {
+    padding-block: 50px;
+    /* outline: 2px solid green; */
+}
+
+.intro h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--fc-2);
+}
+
+.intro p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--fc-2);
+}
+
+.intro .winner {
+    color: var(--fc-3);
+    text-transform: uppercase;
+}
+
+.dice {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+}
+
+.dice h3 {
+    color: var(--fc-1);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.45rem;
+}
+
+.button button{
+    border: 0;
+    color: var(--fc-1);
+    background-color: var(--fc-3);
+    padding: 25px 50px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: .5s ease;
+    margin-right: 25px;
+}
+
+.button button:hover {
+    background-color: var(--fc-4);
+}
+
+@media (width <= 1250px) {
+    .intro h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
+@media (width <= 905px) {
+
+    .intro > * {
+        margin-block: 20px;
+    }
+
+    .intro h1 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .intro p {
+        font-size: 2rem;
+    }
+
+    .button button {
+        font-size: 1rem;
+    }
+}
+
+@media (width <= 600px) {   
+    .dice {
+        justify-content: space-evenly;
+    }
+    .button button {
+
+        margin-right: 10px;
+    }
+}
