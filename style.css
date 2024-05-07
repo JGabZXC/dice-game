@@ -75,6 +75,11 @@ body {
     font-size: 1.45rem;
 }
 
+.dice .wins {
+    font-weight: 600;
+    color: green;
+}
+
 .button button{
     border: 0;
     color: var(--fc-1);
@@ -126,6 +131,6 @@ body {
     }
     .button button {
 
-        margin-right: 10px;
+        margin-right: 5px;
     }
 }
